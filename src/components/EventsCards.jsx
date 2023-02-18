@@ -26,7 +26,7 @@ function EventsCards({userId, event}) {
  
 
   useEffect((event) => {
-    fetch('http://localhost:5000/api/events/events')
+    fetch('https://meet-app-mern-backend5.onrender.com/api/events/events')
       .then(res => {
         let resultJson = res.json();
         return resultJson;
